@@ -18,10 +18,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 20px;
-    height: 100vh;
-}
+     margin: 0;
+    padding: 30px;
+    height:  70vh;
+     margin-bottom: 20%;
+  }
 
 main{
     background-color: var(--offwhite);
@@ -29,10 +30,10 @@ main{
     box-shadow: 0 5px 10px 10px rgb(0, 0, 0, 0.05);
     max-width: 770px;
     width: 770px;
-    margin: auto;
+    margin:auto;
     overflow: hidden;
-    
-}
+    flex-direction: column;
+  }
 
 section{
     padding: 35px;
@@ -57,14 +58,16 @@ div.row > section{
 flex: 1;
 }
 
- h1{
+ h2.blue{
     color: var(--Cyan);
     font-size: 40px;
- }
+    margin-bottom: 30px;
+  }
 
- h2.yellow-text{
+ h3.yellow-text{
 color: var(--Bright-Yellow);
- }
+  
+}
 
 p.grey-text{
     color: var(--grey-text);
@@ -76,6 +79,7 @@ p.grey-text{
     font-size: 20px;
  }
 
+ 
 p.price{
 color:  var(--grey);
 display: flex;
@@ -94,10 +98,10 @@ p.price span{
  button{
 background-color: var(--Bright-Yellow);
 width: 100%;
-font-size: 20px;
+font-size: 18px;
 padding: 18px 0;
-margin-top: 15px;
-border-radius: 5px;
+margin-top: 20px;
+ border-radius: 5px;
 box-shadow: 0 5px 10px 10px rgb(0, 0, 0, 0.05);
 color: var(--offwhite);
 font-family: 'Karla', sans-serif;
@@ -106,18 +110,32 @@ font-weight: 700;
 }
 
 ul{
+
     list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
     padding: 0;
     opacity: 0.7;
+     margin-bottom: 15px;
+     font-family: 'Karla', sans-serif;
  }
 
 ul li{
-line-height: 24px;
+line-height: 26px;
 
 }
 
+ 
 @media screen and (max-width: 576px) {
+    
     .row{
         flex-direction: column;
+    }
+    div.row{
+        container: 1fr 1fr;
+    }
+    div > .cyan-text
+    .blue-text{
+        grid-row: 2;
     }
 }
